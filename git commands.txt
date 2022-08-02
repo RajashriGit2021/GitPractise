@@ -1,0 +1,216 @@
+
+
+Sandip Darveshi@Darveshi MINGW64 /d/Rajashri/Velocity/Git Project
+$ git config --global user.name Rajashri
+
+Sandip Darveshi@Darveshi MINGW64 /d/Rajashri/Velocity/Git Project
+$ git config --global user.email rajashri.sandip@gmail.com
+
+Sandip Darveshi@Darveshi MINGW64 /d/Rajashri/Velocity/Git Project
+$ git config --global user.email
+rajashri.sandip@gmail.com
+
+Sandip Darveshi@Darveshi MINGW64 /d/Rajashri/Velocity/Git Project
+$ git config --global user.name
+Rajashri
+
+Sandip Darveshi@Darveshi MINGW64 /d/Rajashri/Velocity/Git Project
+$ code .
+
+Sandip Darveshi@Darveshi MINGW64 /d/Rajashri/Velocity/Git Project
+$ git init
+Initialized empty Git repository in D:/Rajashri/Velocity/Git Project/.git/
+
+Sandip Darveshi@Darveshi MINGW64 /d/Rajashri/Velocity/Git Project (master)
+$ ls -lart
+total 8
+drwxr-xr-x 1 Sandip Darveshi 197121 0 May 26 22:06 ../
+drwxr-xr-x 1 Sandip Darveshi 197121 0 May 26 22:10 ./
+drwxr-xr-x 1 Sandip Darveshi 197121 0 May 26 22:10 .git/
+
+Sandip Darveshi@Darveshi MINGW64 /d/Rajashri/Velocity/Git Project (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Sandip Darveshi@Darveshi MINGW64 /d/Rajashri/Velocity/Git Project (master)
+$ git add index.html
+
+Sandip Darveshi@Darveshi MINGW64 /d/Rajashri/Velocity/Git Project (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+
+
+Sandip Darveshi@Darveshi MINGW64 /d/Rajashri/Velocity/Git Project (master)
+$ git commit
+[master (root-commit) 4828318] Initial commit
+ 1 file changed, 10 insertions(+)
+ create mode 100644 index.html
+
+Sandip Darveshi@Darveshi MINGW64 /d/Rajashri/Velocity/Git Project (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Sandip Darveshi@Darveshi MINGW64 /d/Rajashri/Velocity/Git Project (master)
+$ touch about.html
+
+Sandip Darveshi@Darveshi MINGW64 /d/Rajashri/Velocity/Git Project (master)
+$ touch contact.html
+
+Sandip Darveshi@Darveshi MINGW64 /d/Rajashri/Velocity/Git Project (master)
+$ touch monm.html
+
+Sandip Darveshi@Darveshi MINGW64 /d/Rajashri/Velocity/Git Project (master)
+$ git add -A
+
+Sandip Darveshi@Darveshi MINGW64 /d/Rajashri/Velocity/Git Project (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   about.html
+        new file:   contact.html
+        new file:   monm.html
+
+
+Sandip Darveshi@Darveshi MINGW64 /d/Rajashri/Velocity/Git Project (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   about.html
+        new file:   contact.html
+        new file:   monm.html
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   about.html
+
+
+Sandip Darveshi@Darveshi MINGW64 /d/Rajashri/Velocity/Git Project (master)
+$ git add -A
+
+Sandip Darveshi@Darveshi MINGW64 /d/Rajashri/Velocity/Git Project (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   about.html
+        new file:   contact.html
+        new file:   monm.html
+
+
+Sandip Darveshi@Darveshi MINGW64 /d/Rajashri/Velocity/Git Project (master)
+$ git commit -m "Added more html"
+[master f33638f] Added more html
+ 3 files changed, 10 insertions(+)
+ create mode 100644 about.html
+ create mode 100644 contact.html
+ create mode 100644 monm.html
+
+Sandip Darveshi@Darveshi MINGW64 /d/Rajashri/Velocity/Git Project (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Sandip Darveshi@Darveshi MINGW64 /d/Rajashri/Velocity/Git Project (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   about.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Sandip Darveshi@Darveshi MINGW64 /d/Rajashri/Velocity/Git Project (master)
+$ git checkout about.html
+Updated 1 path from the index
+
+Sandip Darveshi@Darveshi MINGW64 /d/Rajashri/Velocity/Git Project (master)
+$ git log
+commit f33638fc7d4c6e9e42e64e4215c937fd51e3d801 (HEAD -> master)
+Author: Rajashri <rajashri.sandip@gmail.com>
+Date:   Thu May 26 22:25:20 2022 +0530
+
+    Added more html
+
+commit 4828318a3e3667da60ddf2b71c2722ea5fdf29c0
+Author: Rajashri <rajashri.sandip@gmail.com>
+Date:   Thu May 26 22:18:59 2022 +0530
+
+    Initial commit
+
+Sandip Darveshi@Darveshi MINGW64 /d/Rajashri/Velocity/Git Project (master)
+$ git log -p -2
+commit f33638fc7d4c6e9e42e64e4215c937fd51e3d801 (HEAD -> master)
+Author: Rajashri <rajashri.sandip@gmail.com>
+Date:   Thu May 26 22:25:20 2022 +0530
+
+    Added more html
+
+diff --git a/about.html b/about.html
+new file mode 100644
+index 0000000..69f8f07
+--- /dev/null
++++ b/about.html
+@@ -0,0 +1,10 @@
++<!DOCTYPE html>
++<html>
++<body>
++
++<h1>My about Heading</h1>
++
++<p>My about paragraph.</p>
++
++</body>
++</html>
+diff --git a/contact.html b/contact.html
+new file mode 100644
+index 0000000..e69de29
+diff --git a/monm.html b/monm.html
+new file mode 100644
+index 0000000..e69de29
+https://www.youtube.com/watch?v=gwWKnnCMQ5c
+
+
+commit 4828318a3e3667da60ddf2b71c2722ea5fdf29c0
+Author: Rajashri <rajashri.sandip@gmail.com>
+Date:   Thu May 26 22:18:59 2022 +0530
+
+    Initial commit
+
+diff --git a/index.html b/index.html
+new file mode 100644
+index 0000000..c87692f
+--- /dev/null
++++ b/index.html
+@@ -0,0 +1,10 @@
++<!DOCTYPE html>
++<html>
++<body>
++
++<h1>My First Heading</h1>
++
++<p>My first paragraph.</p>
++
++</body>
++</html>
+
+Sandip Darveshi@Darveshi MINGW64 /d/Rajashri/Velocity/Git Project (master)
+$
